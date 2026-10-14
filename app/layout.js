@@ -3,10 +3,10 @@ import "./globals.css";
 
 const baloo = Baloo_2({ subsets: ["latin"], variable: "--font-baloo", weight: ["500", "600", "700", "800"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"FoodEstablishment","name":"Jajanan Bu Rina","description":"Jajanan pasar & rice bowl rumahan","url":"https://linkinbio-jajan.vercel.app","areaServed":"ID"};
+const __jsonld = {"@context":"https://schema.org","@type":"FoodEstablishment","name":"Jajanan Bu Rina","description":"Jajanan pasar & rice bowl rumahan","url":"https://linkinbio-jajan.pintuweb.id","areaServed":"ID"};
 
 export const metadata = {
-  metadataBase: new URL("https://linkinbio-jajan.vercel.app"),
+  metadataBase: new URL("https://linkinbio-jajan.pintuweb.id"),
   title: { default: "Jajanan Bu Rina — Jajanan Pasar & Rice Bowl, Bandung", template: "%s — Jajanan Bu Rina" },
   description: "Tautan Jajanan Bu Rina di Bandung: papan buka/tutup menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers untuk acara.",
   applicationName: "Jajanan Bu Rina",
@@ -14,11 +14,11 @@ export const metadata = {
   authors: [{ name: "Jajanan Bu Rina" }],
   creator: "Jajanan Bu Rina",
   publisher: "Jajanan Bu Rina",
-  alternates: { canonical: "https://linkinbio-jajan.vercel.app" },
+  alternates: { canonical: "https://linkinbio-jajan.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://linkinbio-jajan.vercel.app",
+    url: "https://linkinbio-jajan.pintuweb.id",
     siteName: "Jajanan Bu Rina",
     title: "Jajanan Bu Rina — Jajanan Pasar & Rice Bowl, Bandung",
     description: "Tautan Jajanan Bu Rina di Bandung: papan buka/tutup menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers untuk acara.",

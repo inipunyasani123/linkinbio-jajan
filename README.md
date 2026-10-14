@@ -2,7 +2,7 @@
 
 Tautan Jajanan Bu Rina di Bandung: papan buka/tutup menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers untuk acara.
 
-**Demo live:** https://linkinbio-jajan.vercel.app
+**Demo live:** https://linkinbio-jajan.pintuweb.id
 
 ![Tangkapan layar Jajanan Bu Rina](public/og.jpg)
 
