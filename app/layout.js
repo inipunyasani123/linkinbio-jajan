@@ -3,12 +3,12 @@ import "./globals.css";
 
 const baloo = Baloo_2({ subsets: ["latin"], variable: "--font-baloo", weight: ["500", "600", "700", "800"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"FoodEstablishment","name":"Jajanan Bu Rina","description":"Jajanan pasar & rice bowl rumahan","url":"https://linkinbio-jajan.pintuweb.id","areaServed":"ID"};
+const __jsonld = {"@context":"https://schema.org","@type":"FoodEstablishment","name":"Jajanan Bu Rina","description":"Jajanan pasar & rice bowl rumahan (usaha fiktif untuk purwarupa desain)","url":"https://linkinbio-jajan.pintuweb.id","servesCuisine":["Jajanan pasar","Rice bowl"],"priceRange":"Rp4.000–Rp18.000","address":{"@type":"PostalAddress","addressLocality":"Bandung","addressCountry":"ID"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"20:00"}]};
 
 export const metadata = {
   metadataBase: new URL("https://linkinbio-jajan.pintuweb.id"),
   title: { default: "Jajanan Bu Rina — Jajanan Pasar & Rice Bowl, Bandung", template: "%s — Jajanan Bu Rina" },
-  description: "Tautan Jajanan Bu Rina di Bandung: papan buka/tutup menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers untuk acara.",
+  description: "Tautan Jajanan Bu Rina di Bandung: status buka menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers acara.",
   applicationName: "Jajanan Bu Rina",
   keywords: ["jajanan pasar bandung", "rice bowl murah", "snack box acara", "hampers kue", "link in bio warung"],
   authors: [{ name: "Jajanan Bu Rina" }],
@@ -21,13 +21,13 @@ export const metadata = {
     url: "https://linkinbio-jajan.pintuweb.id",
     siteName: "Jajanan Bu Rina",
     title: "Jajanan Bu Rina — Jajanan Pasar & Rice Bowl, Bandung",
-    description: "Tautan Jajanan Bu Rina di Bandung: papan buka/tutup menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers untuk acara.",
+    description: "Tautan Jajanan Bu Rina di Bandung: status buka menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers acara.",
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Jajanan Bu Rina — Jajanan Pasar & Rice Bowl, Bandung" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Jajanan Bu Rina — Jajanan Pasar & Rice Bowl, Bandung",
-    description: "Tautan Jajanan Bu Rina di Bandung: papan buka/tutup menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers untuk acara.",
+    description: "Tautan Jajanan Bu Rina di Bandung: status buka menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers acara.",
     images: ["/og.jpg"],
   },
   robots: {

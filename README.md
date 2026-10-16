@@ -1,6 +1,6 @@
 # Jajanan Bu Rina — Jajanan Pasar & Rice Bowl, Bandung
 
-Tautan Jajanan Bu Rina di Bandung: papan buka/tutup menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers untuk acara.
+Tautan Jajanan Bu Rina di Bandung: status buka menurut jam WIB, menu lengkap, menu baru mingguan, lokasi gerobak, serta PO snack box dan hampers acara.
 
 **Demo live:** https://linkinbio-jajan.pintuweb.id
 
@@ -23,7 +23,7 @@ Persona Jajanan Bu Rina, jajanan kaki lima. Papan menu warung dengan titik penun
 - Next.js 15.5 (App Router) dan React 19
 - Tailwind CSS v4
 - JavaScript
-- Framer Motion, Lucide (ikon)
+- Lucide (ikon); animasi dengan CSS
 - Font: Baloo 2 (next/font)
 - SEO: metadata per halaman, Open Graph, JSON-LD, sitemap.xml, dan robots.txt
 

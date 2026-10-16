@@ -4,7 +4,7 @@ import FormPO from '../components/FormPO';
 
 export const metadata = {
   title: 'PO Acara & Hampers',
-  description: 'Pesan snack box, rice bowl box, atau hampers keranjang bambu dari Jajanan Bu Rina untuk acara — minimal pesanan, paling lambat H-2, total langsung terhitung.',
+  description: 'Pesan snack box, rice bowl box, atau hampers bambu dari Jajanan Bu Rina untuk acara: minimal pesanan, paling lambat H-2, total langsung dihitung.',
   alternates: { canonical: `${SITE}/pesan` },
 };
 
