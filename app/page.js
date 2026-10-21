@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Gift, MapPin, Sparkles, UtensilsCrossed } from 'lucide-react';
-import { BARU, LINKS, MENU, WARUNG, rb, rp } from '@/lib/jajan';
+import { BARU, FOTO, FOTO_BERANDA, LINKS, MENU, WARUNG, rb, rp } from '@/lib/jajan';
+import Gambar from './components/Gambar';
 import PapanBuka from './components/PapanBuka';
 
 const IKON = { menu: UtensilsCrossed, kado: Gift, baru: Sparkles, lokasi: MapPin };
@@ -17,13 +18,21 @@ export default function Home() {
         {/* Papan menu: di layar lebar melebar jadi papan mendatar, menu kiri dan tautan kanan */}
         <div className="naik papan mt-5 rounded-3xl p-6 md:p-8 lg:grid lg:grid-cols-2 lg:gap-x-12 lg:p-10" style={{ animationDelay: '0.06s' }}>
           <header className="text-center lg:col-span-2">
-            <p className="text-4xl lg:text-5xl" aria-hidden="true">🍛</p>
+            <Gambar src="/images/bu-rina.webp" alt="Ilustrasi Bu Rina berkerudung merah, tersenyum lebar sambil memanggul centong" width={104} height={104} asli={512} loading="eager" className="mx-auto h-[6.5rem] w-[6.5rem] lg:h-32 lg:w-32" />
             <h1 className="mt-1 font-display text-3xl font-extrabold lg:text-5xl">{WARUNG.nama}</h1>
             <p className="text-sm font-semibold text-kecap/80">jajanan pasar & rice bowl rumahan · sejak {WARUNG.sejak}</p>
           </header>
 
           <section className="mt-6 lg:mt-8" aria-labelledby="andalan">
             <h2 id="andalan" className="mb-2 text-center text-xs font-extrabold uppercase tracking-[0.25em] text-cabe">≈ Menu Andalan ≈</h2>
+            <ul className="mb-4 grid grid-cols-4 gap-2">
+              {FOTO_BERANDA.map((f, i) => (
+                <li key={f} className={i % 2 ? 'rotate-1' : '-rotate-1'}>
+                  <Gambar src={`/images/menu/${f}.webp`} alt={FOTO[f].alt} width={640} height={640} asli={640} sizes="(min-width: 1024px) 96px, calc((100vw - 120px) / 4)" className="aspect-square w-full rounded-xl border-[3px] border-kecap object-cover" />
+                  <p className="mt-1 text-center text-[11px] font-extrabold leading-tight text-kecap/85">{FOTO[f].label}</p>
+                </li>
+              ))}
+            </ul>
             <ul className="space-y-2.5">
               {ANDALAN.map(([nama, harga, laris], i) => (
                 <li key={nama} className="geser-masuk leaders text-[15px] font-bold" style={{ animationDelay: `${0.18 + i * 0.05}s` }}>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { BARU, MENU, SITE, WARUNG, rb, rp } from '@/lib/jajan';
+import { BARU, FOTO, MENU, SITE, WARUNG, rb, rp } from '@/lib/jajan';
+import Gambar from '../components/Gambar';
 import Kembali from '../components/Kembali';
 
 export const metadata = {
@@ -20,6 +21,7 @@ export default function Menu() {
           {MENU.map((k) => (
             <section key={k.kat} aria-labelledby={`k-${k.kat}`} className="mt-7">
               <h2 id={`k-${k.kat}`} className="mb-2 text-center text-xs font-extrabold uppercase tracking-[0.25em] text-cabe">≈ {k.kat} ≈</h2>
+              <Gambar src={`/images/menu/${k.foto}-lebar.webp`} alt={FOTO[k.foto].alt} width={1000} height={400} asli={1000} sizes="(min-width: 640px) 416px, calc(100vw - 88px)" className="mb-3 aspect-[5/2] w-full rounded-2xl border-[3px] border-kecap object-cover" />
               <ul className="space-y-2.5">
                 {k.item.map(([nama, harga, laris]) => (
                   <li key={nama} className="leaders text-[15px] font-bold">
