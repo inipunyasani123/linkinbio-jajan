@@ -5,7 +5,7 @@ import Gambar from './components/Gambar';
 import PapanBuka from './components/PapanBuka';
 
 const IKON = { menu: UtensilsCrossed, kado: Gift, baru: Sparkles, lokasi: MapPin };
-const ANDALAN = MENU.flatMap((k) => k.item).filter(([, , laris]) => laris).concat([['Pisang Goreng Keju', 8000]]);
+const ANDALAN = MENU.flatMap((k) => k.item).filter(([, , laris]) => laris);
 
 export default function Home() {
   return (

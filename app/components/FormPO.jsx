@@ -1,7 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { PAKET, rp } from '@/lib/jajan';
+import { FOTO, PAKET, rp } from '@/lib/jajan';
+import Gambar from './Gambar';
 
 // Tanggal paling cepat = hari ini + 2 hari (WIB), format yyyy-mm-dd.
 function hPlus2() {
@@ -41,8 +42,9 @@ export default function FormPO() {
           {PAKET.map((x) => (
             <label key={x.id} className={`flex cursor-pointer items-start gap-3 rounded-2xl border-[3px] p-3 has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-cabe ${paket === x.id ? 'border-kecap bg-kunyit' : 'border-kecap/30 bg-santan'}`}>
               <input type="radio" name="paket" value={x.id} checked={paket === x.id} onChange={() => { setPaket(x.id); setJml(String(x.min)); }} className="mt-1.5 accent-[#d62828]" />
+              <Gambar src={`/images/menu/${x.foto}.webp`} alt={FOTO[x.foto].alt} width={64} height={64} asli={800} className="h-16 w-16 shrink-0 rounded-xl border-2 border-kecap object-cover" />
               <span className="flex-1">
-                <span className="flex justify-between gap-2 font-extrabold"><span>{x.nama}</span><span>{rp(x.harga)}</span></span>
+                <span className="flex justify-between gap-2 font-extrabold"><span>{x.nama}</span><span className="whitespace-nowrap">{rp(x.harga)}</span></span>
                 <span className="block text-xs font-semibold">{x.ket} · min. {x.min} {x.satuan}</span>
               </span>
             </label>
