@@ -18,7 +18,7 @@ export default function Home() {
         {/* Papan menu: di layar lebar melebar jadi papan mendatar, menu kiri dan tautan kanan */}
         <div className="naik papan mt-5 rounded-3xl p-6 md:p-8 lg:grid lg:grid-cols-2 lg:gap-x-12 lg:p-10" style={{ animationDelay: '0.06s' }}>
           <header className="text-center lg:col-span-2">
-            <Gambar src="/images/bu-rina.webp" alt="Ilustrasi Bu Rina berkerudung merah, tersenyum lebar sambil memanggul centong" width={104} height={104} asli={512} loading="eager" className="mx-auto h-[6.5rem] w-[6.5rem] lg:h-32 lg:w-32" />
+            <Gambar src="/images/bu-rina.webp" alt="Ilustrasi Bu Rina tanpa wajah, berkerudung merah, membawa centong kayu" width={104} height={104} asli={512} loading="eager" className="mx-auto h-[6.5rem] w-[6.5rem] lg:h-32 lg:w-32" />
             <h1 className="mt-1 font-display text-3xl font-extrabold lg:text-5xl">{WARUNG.nama}</h1>
             <p className="text-sm font-semibold text-kecap/80">jajanan pasar & rice bowl rumahan · sejak {WARUNG.sejak}</p>
           </header>
